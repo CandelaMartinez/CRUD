@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+	<!-- datasource:pool de conexiones, maximo de conexiones, cantidad de conexiones 
+		inactivas maxima tiempo de espera milisegundos, driver -->
+
+	<Resource name="jdbc/productos" auth="Container"
+		type="javax.sql.DataSource" maxActive="15" maxIdle="3" maxWait="5000"
+		username="root" password="" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/productos">
+	</Resource>
+
+
+</Context>
