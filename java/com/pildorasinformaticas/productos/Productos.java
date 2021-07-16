@@ -6,11 +6,10 @@ public class Productos {
 
 	private String cArt, seccion, nArt, importado,pOrig;
 	private double precio;
-	private Date fecha;
 	
-	//2 constructores que incluye el campo clave(para eliminar articulos) y otro que no lo incluye
-	public Productos(String cArt, String seccion, String nArt, String importado, String pOrig, double precio,
-			Date fecha) {
+	
+	//sobrecarga de constructores
+	public Productos(String cArt, String seccion, String nArt, double precio, String importado, String pOrig) {
 		
 		this.cArt = cArt;
 		this.seccion = seccion;
@@ -18,7 +17,18 @@ public class Productos {
 		this.importado = importado;
 		this.pOrig = pOrig;
 		this.precio = precio;
-		this.fecha = fecha;
+		
+	}
+	
+	public Productos( String seccion, String nArt, double precio, String importado, String pOrig) {
+		
+		
+		this.seccion = seccion;
+		this.nArt = nArt;
+		this.importado = importado;
+		this.pOrig = pOrig;
+		this.precio = precio;
+		
 	}
 
 	public Productos(String seccion, String nArt, String importado, String pOrig) {
@@ -81,21 +91,14 @@ public class Productos {
 		this.precio = precio;
 	}
 
-	public Date getFecha() {
-		return fecha;
-	}
-
-	public void setFecha(Date fecha) {
-		this.fecha = fecha;
-	}
-
-	//toString
 	@Override
 	public String toString() {
-		return "Productos [ seccion=" + seccion + ", nArt=" + nArt + ", importado=" + importado
-				+ ", pOrig=" + pOrig + "]";
+		return "Productos [cArt=" + cArt + ", seccion=" + seccion + ", nArt=" + nArt + ", importado=" + importado
+				+ ", pOrig=" + pOrig +  "]";
 	}
+
 	
+
 	
 	
 	

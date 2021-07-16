@@ -12,7 +12,7 @@
 
 <!-- cuando el usuario envie el formulario, junto a la informacion visible va a ir invisible una instruccion 'insertarBBDD' -->
 <!-- para poder usar un if en el controlador -->
-<form name="form" method="GET" action="ControladorProductos">
+<form name="form1" method="get" action="ControladorProductos">
 
 <input type="hidden" name="instruccion" value="insertarBBDD">
 
@@ -21,6 +21,10 @@
 
  <tbody>
 
+ <tr>
+   <td>CODIGO</td>
+   <td><input maxlength="11" size="24" type="text" name="codigo" /></td>
+  </tr>
  
   <tr>
    <td>SECCION</td>
@@ -30,6 +34,11 @@
   <tr>
    <td>NOMBREARTICULO</td>
    <td><input maxlength="24" size="24" type="text" name="nArt" /></td>
+  </tr>
+  
+   <tr>
+   <td>PRECIO</td>
+   <td><input maxlength="11" size="24" type="text" name="precio" /></td>
   </tr>
  
   <tr>
